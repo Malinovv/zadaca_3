@@ -103,3 +103,7 @@ span {
   background-color: #04395e;
   color: #d5896f;
 }
+
+li.completed {
+  text-decoration: line-through;
+}
