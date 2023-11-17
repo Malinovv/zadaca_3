@@ -104,6 +104,7 @@ span {
   color: #d5896f;
 }
 
-li.completed {
+.completed span {
   text-decoration: line-through;
+  color: rgb(0, 127, 0);
 }
