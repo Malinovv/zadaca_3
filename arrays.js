@@ -17,3 +17,38 @@ let myArray2 = [
 
 myArray[0]; // 1
 myArray[1]; // 2
+
+let pElements = ["<p>1</p>", "<p>2</p>", "<p>2</p>"];
+
+// pElements[1] ......
+
+// Array advanced concepts:
+// 1. Array methods (ES6): forEach, map, filter and reduce.
+let newArray = [];
+myArray.forEach((element) => {
+  newArray.push(element * 2);
+});
+let filteredArray = myArray.filter((element) => {
+  return false;
+});
+let mappedArray = myArray.map((element) => {
+  return element + 2;
+});
+console.log(newArray);
+console.log(filteredArray);
+console.log(mappedArray);
+// --- double numbers
+// -- filter even numbers
+// -- calculate total (reduce)
+// -- transform uppercase
+// -- find longest word (reduce)
+// 2. Difference between map and forEach (distructive vs. non-distructive methods)
+// 3. Array sorting
+
+let names = ["viktor", "marija", "vlado"];
+
+let upperCaseNames = names.map((name) => {
+  return name.toUpperCase();
+});
+
+console.log(upperCaseNames);
