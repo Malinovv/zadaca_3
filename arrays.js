@@ -37,6 +37,21 @@ let mappedArray = myArray.map((element) => {
 console.log(newArray);
 console.log(filteredArray);
 console.log(mappedArray);
+
+let notReducedArr = [
+  "The",
+  "quick",
+  "brown",
+  "fox",
+  "jumps",
+  "over",
+  "the",
+  "lazy",
+  "dog",
+];
+let reducedElement = notReducedArr.reduce((accumulator, element) => {
+  return (accumulator += " " + element);
+}, "");
 // --- double numbers
 // -- filter even numbers
 // -- calculate total (reduce)
@@ -45,10 +60,4 @@ console.log(mappedArray);
 // 2. Difference between map and forEach (distructive vs. non-distructive methods)
 // 3. Array sorting
 
-let names = ["viktor", "marija", "vlado"];
-
-let upperCaseNames = names.map((name) => {
-  return name.toUpperCase();
-});
-
-console.log(upperCaseNames);
+console.log(reducedElement);
