@@ -72,13 +72,13 @@ console.log(reducedElement);
 
 // -- double numbers
 // -- filter even numbers
+// -- transform uppercase
 // -- calculate total (reduce)
 let sum = myArray.reduce((total, value) => {
   return total + value;
 });
 
 console.log(sum);
-// -- transform uppercase
 // -- find longest word (reduce)
 const strings = [
   "Akomulator",
