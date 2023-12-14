@@ -73,8 +73,29 @@ console.log(reducedElement);
 // -- double numbers
 // -- filter even numbers
 // -- calculate total (reduce)
+let sum = myArray.reduce((total, value) => {
+  return total + value;
+});
+
+console.log(sum);
 // -- transform uppercase
 // -- find longest word (reduce)
+const strings = [
+  "Akomulator",
+  "Karburator",
+  "Stega",
+  "Otorinolaringolog",
+  "Plastika",
+  "Sise",
+];
+const longestStr = strings.reduce((longstStr, string) => {
+  if (string.length > longstStr.length) {
+    return string;
+  } else {
+    return longstStr;
+  }
+});
+console.log(longestStr);
 // 2. Difference between map and forEach (distructive vs. non-distructive methods)
 // 3. Array sorting
 
